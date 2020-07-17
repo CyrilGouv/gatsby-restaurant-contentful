@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Navbar from '../components/globals/navbar'
 
-import "./layout.css"
+// import "./layout.css"
 
 const Layout = ({ children }) => {
 
