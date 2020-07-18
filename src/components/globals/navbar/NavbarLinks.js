@@ -28,7 +28,7 @@ const LinkWrapper = styled.ul`
     padding: 0;
     height: 0;
     overflow: hidden;
-    ${styles.transDefault};
+    ${styles.transObject({ time: '.35s' })};
 
     &.isOpen {
         height: 152px;
@@ -48,6 +48,18 @@ const LinkWrapper = styled.ul`
             color: ${styles.colors.mainYellow};
             padding: .5rem 1rem .5rem 1.3rem;
         }
+    }
+
+    @media (min-width: 768px) {
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+            
+        .nav-link:hover {
+            padding: .5rem 1rem .5rem 1rem;
+            background: ${styles.colors.mainWhite};
+        }
+        
     }
 `
 
